@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Gallery Container -->
+    <div class="gallery-container">
+        <h1>🖼️ My Photo Gallery</h1>
+        
+        <!-- Filter Buttons (Optional) -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="people">People</button>
+        </div>
+
+        <!-- Image Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Each image item has a category -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=1" alt="Nature Photo 1">
+                <div class="overlay">
+                    <h3>Beautiful Landscape</h3>
+                    <p>Nature • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=2" alt="City Photo 1">
+                <div class="overlay">
+                    <h3>City Lights</h3>
+                    <p>Urban • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=3" alt="Nature Photo 2">
+                <div class="overlay">
+                    <h3>Forest Path</h3>
+                    <p>Nature • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/300/200?random=4" alt="People Photo 1">
+                <div class="overlay">
+                    <h3>Street Portrait</h3>
+                    <p>People • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=5" alt="City Photo 2">
+                <div class="overlay">
+                    <h3>Architecture</h3>
+                    <p>Urban • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/300/200?random=6" alt="Nature Photo 3">
+                <div class="overlay">
+                    <h3>Mountain View</h3>
+                    <p>Nature • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="https://picsum.photos/300/200?random=7" alt="People Photo 2">
+                <div class="overlay">
+                    <h3>Happy Moment</h3>
+                    <p>People • 2024</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/300/200?random=8" alt="City Photo 3">
+                <div class="overlay">
+                    <h3>Night Scene</h3>
+                    <p>Urban • 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal (for full-size images) -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <button class="nav-btn prev-btn" id="prevBtn">❮</button>
+            <img src="" alt="" id="lightboxImg">
+            <button class="nav-btn next-btn" id="nextBtn">❯</button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
